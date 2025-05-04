@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+export const runtime = "edge";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";

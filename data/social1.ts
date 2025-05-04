@@ -5,7 +5,7 @@ export interface SocialLink {
     icon: string;
   }
   
-  export const socialLinks: SocialLink[] = [
+  export const socialLinks1: SocialLink[] = [
     {
       id: "github",
       name: "GitHub",
@@ -30,10 +30,4 @@ export interface SocialLink {
       url: "tel:+916268111872",
       icon: "phone"
     },
-    {
-      id: "Leetcode",
-      name: "Leetcode",
-      url: "https://leetcode.com/u/Kishan0001/",
-      icon: "Leetcode"
-    }
   ];

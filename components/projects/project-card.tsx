@@ -47,14 +47,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <Badge variant="outline">+{project.technologies.length - 4}</Badge>
           )}
         </div>
-        {/* <ul className="space-y-2 text-sm text-muted-foreground">
-          {project.achievements.slice(0, 2).map((achievement, i) => (
-            <li key={i} className="flex items-start">
-              <ArrowRight className="mr-2 h-4 w-4 text-primary mt-0.5 shrink-0" />
-              <span>{achievement}</span>
-            </li>
-          ))}
-        </ul> */}
       </CardContent>
       <CardFooter className="flex gap-2">
         {/* <Button asChild variant="default" size="sm">

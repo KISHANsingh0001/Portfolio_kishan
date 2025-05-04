@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+export const runtime = "edge";
 
 export default function BlogPage() {
   const [email, setEmail] = useState("");

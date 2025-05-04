@@ -2,10 +2,11 @@
 "use client";
 
 import Link from "next/link";
+export const runtime = "edge";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, Copyright, ExternalLink, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { socialLinks } from "@/data/social";
+import { socialLinks1 } from "@/data/social1";
 
 export function Footer() {
   // Get icon component for social links
@@ -63,16 +64,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/blog" 
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <a 
-                  href="/resume.pdf" 
+                  href="https://drive.google.com/file/d/1PbktvYeGg_1OnzT8nDH5LvS7Daxoxdw-/view?usp=drive_link" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
@@ -87,7 +80,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Connect</h3>
             <div className="flex flex-wrap gap-2">
-              {socialLinks.map((social) => (
+              {socialLinks1.map((social) => (
                 <Button
                   key={social.id}
                   variant="ghost"
@@ -105,26 +98,6 @@ export function Footer() {
                   </a>
                 </Button>
               ))}
-            </div>
-          </div>
-          
-          {/* Keyboard Shortcuts */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold">Keyboard Shortcuts</h3>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <div className="flex gap-1">
-                  <kbd className="px-2 py-1 bg-muted border rounded text-[10px] font-mono">⌘</kbd>
-                  <kbd className="px-2 py-1 bg-muted border rounded text-[10px] font-mono">K</kbd>
-                </div>
-                <span>Search</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <div className="flex gap-1">
-                  <kbd className="px-2 py-1 bg-muted border rounded text-[10px] font-mono">T</kbd>
-                </div>
-                <span>Toggle theme</span>
-              </div>
             </div>
           </div>
         </div>

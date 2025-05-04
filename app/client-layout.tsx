@@ -11,9 +11,7 @@ import { ScrollProgress } from "@/components/shared/scroll-progress";
 import { SmoothScrollProvider } from "@/components/shared/smooth-scroll-provider";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { StarsCanvas } from "@/components/star-background";
 
 
 

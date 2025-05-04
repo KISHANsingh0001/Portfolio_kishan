@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "@/components/projects/project-card";
-import { Badge } from "@/components/ui/badge";
 import { projects } from "@/data/projects";
 
 const allTechnologies = Array.from(

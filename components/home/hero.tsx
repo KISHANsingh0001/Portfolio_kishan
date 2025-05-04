@@ -1,12 +1,13 @@
 // components/home/hero.tsx
 "use client";
-
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Download, Github, Leaf, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowRight, CarIcon, Download, Github, Leaf, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { socialLinks } from "@/data/social";
+import LeetcodeIcon from '@/public/lcIcon';
+export const runtime = "edge";
 
 export function Hero() {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
@@ -35,8 +36,8 @@ export function Hero() {
         return <Mail className="h-5 w-5" />;
       case "phone":
         return <Phone className="h-5 w-5" />;
-      case "leetcode":
-        return <Leaf className="h-5 w-5" />;
+      case "Leetcode":
+        return <LeetcodeIcon/>;
       default:
         return null;
     }
@@ -44,14 +45,6 @@ export function Hero() {
 
   return (
     <section className="relative py-12 md:py-24 overflow-hidden">
-      {/* Background elements with parallax effect */}
-      {/* <motion.div 
-        className="absolute inset-0 -z-10"
-        style={{ y: useTransform(scrollY, [0, 1000], [0, 300]) }}
-      >
-        <div className="absolute right-0 top-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl opacity-70" />
-        <div className="absolute left-20 bottom-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-60" />
-      </motion.div> */}
 
       <div className="container px-4 md:px-6 mx-auto">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">

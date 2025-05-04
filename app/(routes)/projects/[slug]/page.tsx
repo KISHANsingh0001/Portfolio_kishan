@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { projects, Project } from "@/data/projects";
 import React from "react";
+export const runtime = "edge";
 
 export default function ProjectPage() {
   const router = useRouter();
@@ -81,16 +82,6 @@ export default function ProjectPage() {
               <div className="prose max-w-none">
                 <h2 className="text-2xl font-bold mb-4">Overview</h2>
                 <p className="mb-6">{project.longDescription || project.description}</p>
-
-                <h2 className="text-2xl font-bold mb-4">Achievements</h2>
-                <ul className="space-y-2 mb-6">
-                  {project.achievements.map((achievement, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="mr-2 font-bold">•</span>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </motion.div>
           </div>

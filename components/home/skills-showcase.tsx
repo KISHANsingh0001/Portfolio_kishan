@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TechIcon } from "@/components/tech-icon";
 import { Badge } from "@/components/ui/badge";
 import { skills, SkillCategory } from "@/data/skills";
+export const runtime = "edge";
 
 
 export function SkillsShowcase() {

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { education } from "@/data/education";
 import { skills, SkillCategory } from "@/data/skills";
+export const runtime = "edge";
 
 export default function AboutPage() {
   return (

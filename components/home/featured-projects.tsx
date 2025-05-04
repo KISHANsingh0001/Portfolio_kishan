@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/card";
 import { projects } from "@/data/projects";
 import Link from "next/link";
+export const runtime = "edge";
 
 
 export function FeaturedProjects() {

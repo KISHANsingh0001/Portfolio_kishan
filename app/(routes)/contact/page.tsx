@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
-import { ContactForm } from "@/components/contact/contact-form";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { socialLinks } from "@/data/social";
+import { socialLinks1 } from "@/data/social1";
+export const runtime = "edge";
 
 export default function ContactPage() {
   // Get icon component for social links
@@ -64,7 +65,7 @@ export default function ContactPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col space-y-6">
-                {socialLinks.map((social, index) => (
+                {socialLinks1.map((social, index) => (
                   <motion.a
                     key={social.id}
                     initial={{ opacity: 0, y: 10 }}

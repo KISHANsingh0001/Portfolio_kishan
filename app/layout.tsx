@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kishan Singh Thakur",
-  description: "Full Stack Developer & Machine Learning Enthusiast",
+  description: "Full Stack Developer",
  
 };
 
