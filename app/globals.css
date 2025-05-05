@@ -222,9 +222,10 @@ html {
 }
 
 .card-wrapper::before{
-  background: linear-gradient(315deg , #00ccff , #d400d4);
-  inset: -10px 140px;
-  @apply absolute w-[40%] h-[110%] content-[''] bottom-5 animate-[spin_4s_linear_infinite] ;
+  /* background: linear-gradient(315deg , #00ccff , #d400d4); */
+  background: linear-gradient(3deg, #f9d751, #ffad53, #f7875f, #e5686b, #cc5075, #ae3f7a, #8e3479, #6c2d72);
+  inset: -20px -19px;
+  @apply absolute w-[110%] h-[110%] content-[''] bottom-5 animate-[spin_2s_linear_infinite] rounded-full;
 }
 
 .image-content {

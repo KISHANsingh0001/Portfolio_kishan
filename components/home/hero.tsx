@@ -8,7 +8,7 @@ import Image from "next/image";
 import { socialLinks } from "@/data/social";
 import LeetcodeIcon from '@/public/lcIcon';
 export const runtime = "edge";
-
+import kishanImage from "@/public/images/kishan.jpg";
 export function Hero() {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   const displayedSkills = [
@@ -160,14 +160,14 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
 
-            <div className="card-wrapper relative aspect-square w-full max-w-md rounded-full ">
-             
+            <div className="card-wrapper relative aspect-square w-full max-w-md rounded-full">
                 <Image
-                  src="/images/kishan.jpg"
+                  src={kishanImage}
                   alt="Kishan Singh Thakur"
                   fill
                   className="object-cover p-1 rounded-full"
                   sizes="(max-width: 768px) 100vw, 400px"
+                  priority
                 />
              
             </div>
