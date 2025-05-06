@@ -6,14 +6,8 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ScrollToTop } from "@/components/shared/scroll-to-top";
 import { ScrollProgress } from "@/components/shared/scroll-progress";
-import { SmoothScrollProvider } from "@/components/shared/smooth-scroll-provider";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useEffect, useState } from "react";
-
-
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -67,13 +61,6 @@ export function ClientLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {mounted && (
-            <>
-               {/* <StarsCanvas /> */}
-              {/* <BlackHoleVideo />  */}
-            </>
-          )}
-          <SmoothScrollProvider>
             <div className="relative flex min-h-screen flex-col">
               <Navbar />
               <main className="flex-1 pt-16">
@@ -81,11 +68,7 @@ export function ClientLayout({
               </main>
               <Footer />
             </div>
-            <ScrollToTop />
-            <ScrollProgress />
-            <SpeedInsights/>
-            <Analytics />
-          </SmoothScrollProvider>
+            <ScrollProgress /> 
         </ThemeProvider>
       </body>
     </html>

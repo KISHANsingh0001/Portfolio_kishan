@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 
 // Import but hide the visible button
-import { CommandPalette } from "@/components/ui/command-palette";
 import { ThreeDCard } from "@/components/3d-card";
 
 interface NavItem {
