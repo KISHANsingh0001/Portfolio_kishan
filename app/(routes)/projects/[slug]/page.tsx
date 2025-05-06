@@ -6,7 +6,6 @@ import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { projects, Project } from "@/data/projects";
 import React from "react";
@@ -94,7 +93,7 @@ export default function ProjectPage() {
               className="bg-muted rounded-lg p-6 sticky top-24"
             >
               <h2 className="text-xl font-bold mb-4">Project Details</h2>
-              <Separator className="my-4" />
+             
 
               <div className="space-y-4">
                 <div>
@@ -108,7 +107,7 @@ export default function ProjectPage() {
                   </div>
                 </div>
 
-                <Separator className="my-4" />
+              
 
                 <div className="flex flex-col gap-2">
                   <h3 className="font-semibold">Links</h3>
