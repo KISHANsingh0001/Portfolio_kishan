@@ -8,7 +8,7 @@ import Image from "next/image";
 import { socialLinks } from "@/data/social";
 import LeetcodeIcon from '@/public/lcIcon';
 export const runtime = "edge";
-import kishanImage from "@/public/images/kishan.jpg";
+import kishanImage from "@/public/images/kishan1.webp";
 export function Hero() {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   const displayedSkills = [
