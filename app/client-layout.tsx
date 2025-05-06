@@ -7,6 +7,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ScrollProgress } from "@/components/shared/scroll-progress";
+import { SmoothScrollProvider } from "@/components/shared/smooth-scroll-provider";
 import { useEffect, useState } from "react";
 
 const fontSans = FontSans({
@@ -61,6 +62,7 @@ export function ClientLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <SmoothScrollProvider>
             <div className="relative flex min-h-screen flex-col">
               <Navbar />
               <main className="flex-1 pt-16">
@@ -68,7 +70,8 @@ export function ClientLayout({
               </main>
               <Footer />
             </div>
-            <ScrollProgress /> 
+            <ScrollProgress />
+          </SmoothScrollProvider>
         </ThemeProvider>
       </body>
     </html>
