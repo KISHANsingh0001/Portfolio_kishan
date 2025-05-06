@@ -55,6 +55,7 @@ export function FeaturedProjects() {
                         className="h-full w-full object-cover transition-transform hover:scale-105"
                         width={600}
                         height={400}
+                        loading="lazy"
                       />
                     </div>
                   )}
