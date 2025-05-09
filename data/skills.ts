@@ -16,7 +16,7 @@ export const skills: Record<SkillCategory, Skill[]> = {
     { name: 'C++', category: 'Languages', logoKey: 'cplusplus' },
     { name: 'JavaScript', category: 'Languages', logoKey: 'javascript' },
     { name: 'TypeScript', category: 'Languages', logoKey: 'typescript' },
-    { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
+    // { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
   ],
   'Frameworks/Libraries': [
     { name: 'React.js', category: 'Frameworks/Libraries', logoKey: 'react' },
@@ -31,7 +31,7 @@ export const skills: Record<SkillCategory, Skill[]> = {
     { name: 'Docker', category: 'Cloud/DevOps', logoKey: 'docker' },
     { name: 'Kubernetes', category: 'Cloud/DevOps', logoKey: 'kubernetes' },
     { name: 'MongoDB', category: 'Cloud/DevOps', logoKey: 'mongodb' },
-    { name: 'PostgreSQL', category: 'Cloud/DevOps', logoKey: 'postgresql' },
+    // { name: 'PostgreSQL', category: 'Cloud/DevOps', logoKey: 'postgresql' },
   ],
   'Concepts': [
     { name: 'Data Structures & Algorithms', category: 'Concepts', logoKey: 'github' },
