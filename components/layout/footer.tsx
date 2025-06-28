@@ -65,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://drive.google.com/file/d/1PbktvYeGg_1OnzT8nDH5LvS7Daxoxdw-/view?usp=drive_link" 
+                  href="https://drive.google.com/file/d/122-FVkonOrCNz-eXC6v0LihZ4wONgDo8/view?usp=drive_link" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
