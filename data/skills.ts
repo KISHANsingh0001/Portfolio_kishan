@@ -2,7 +2,8 @@
 export type SkillCategory = 
   | 'Languages' 
   | 'Frameworks/Libraries' 
-  | 'Cloud/DevOps' 
+  | 'Cloud/DevOps'
+  | 'DataBase' 
   | 'Concepts';
 
 export interface Skill {
@@ -16,7 +17,7 @@ export const skills: Record<SkillCategory, Skill[]> = {
     { name: 'C++', category: 'Languages', logoKey: 'cplusplus' },
     { name: 'JavaScript', category: 'Languages', logoKey: 'javascript' },
     { name: 'TypeScript', category: 'Languages', logoKey: 'typescript' },
-    // { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
+    { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
   ],
   'Frameworks/Libraries': [
     { name: 'React.js', category: 'Frameworks/Libraries', logoKey: 'react' },
@@ -30,7 +31,11 @@ export const skills: Record<SkillCategory, Skill[]> = {
     { name: 'AWS', category: 'Cloud/DevOps', logoKey: 'amazonwebservices' },
     { name: 'Docker', category: 'Cloud/DevOps', logoKey: 'docker' },
     { name: 'Kubernetes', category: 'Cloud/DevOps', logoKey: 'kubernetes' },
-    { name: 'MongoDB', category: 'Cloud/DevOps', logoKey: 'mongodb' },
+  ],
+   'DataBase': [
+     { name: 'MongoDB', category: 'DataBase', logoKey: 'mongodb' },
+    { name: 'MySql', category: 'DataBase', logoKey: 'mysql' },
+    { name: 'Convex', category: 'DataBase', logoKey: 'convex' },
     // { name: 'PostgreSQL', category: 'Cloud/DevOps', logoKey: 'postgresql' },
   ],
   'Concepts': [

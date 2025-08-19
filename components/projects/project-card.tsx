@@ -49,12 +49,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex gap-2">
-        {/* <Button asChild variant="default" size="sm">
+        <Button asChild variant="default" size="sm">
           <Link href={`/projects/${project.id}`}>
             View Details
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
-        </Button> */}
+        </Button>
         <div className="flex-1"></div>
         {project.github && (
           <Button asChild variant="ghost" size="icon">
