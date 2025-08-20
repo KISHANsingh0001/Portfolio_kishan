@@ -26,7 +26,7 @@ export const projects: Project[] = [
     // ],
     image: "/images/projects/Second-Brain/Second-Brain.png", // Path to your image
     github: "https://github.com/KISHANsingh0001/Second-Brain-App",
-    liveUrl: "https://profile.secondbrain.sbs",
+    liveUrl: "https://brain.secondbrain.sbs",
     featured: true
   },
   {
