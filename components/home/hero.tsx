@@ -110,7 +110,7 @@ export function Hero() {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a
-                  href="https://drive.google.com/file/d/122-FVkonOrCNz-eXC6v0LihZ4wONgDo8/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1JUnQ4nXWm3g956HzXmu41Cha3f9SjDQk/view?usp=drive_link"
                   download="kishan_singh_thakur_Resume.pdf"
                   target="_blank"
                 >
